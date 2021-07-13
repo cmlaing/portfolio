@@ -1,0 +1,63 @@
+/* Universal Attributes */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+
+}
+
+/* Color Variables */
+:root {
+    /* green scheme */
+    --wintergreen-dream: #6b9080ff;
+    --cambridge-blue: #a4c3b2ff;
+    --light-cyan: #cce3deff;
+    --mint-cream: #eaf4f4ff;
+    --mint-cream-2: #f6fff8ff;
+
+    /*gunmetal scheme*/
+    --gunmetal: #022b3aff;
+    --metallic-seaweed: #1f7a8cff;
+    --beau-blue: #bfdbf7ff;
+    --lavender-web: #e1e5f2ff;
+    --white: #ffffffff;
+
+    /* pink scheme */
+    --pale-pink: #f7d1cdff;
+    --queen-pink: #e8c2caff;
+    --thistle: #d1b3c4ff;
+    --glossy-grape: #b392acff;
+    --old-lavender: #735d78ff;
+
+    /* Current Scheme */
+    
+
+}
+
+/* Grid */
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    grid-template-areas: "head nav"
+                        "main main"
+                        "footer footer"; */
+}
+
+header {
+    grid-area: head;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
