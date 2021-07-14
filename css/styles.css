@@ -31,33 +31,36 @@
     --old-lavender: #735d78ff;
 
     /* Current Scheme */
+    --btn: var(--wintergreen-dream);  
+    --background: var(--mint-cream-2);
+
+
+}
+
+body {
+    background-color: var(--light-cyan);
     
-
 }
 
-/* Grid */
-
-.grid-container {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 1fr;
-    grid-template-areas: "head nav"
-                        "main main"
-                        "footer footer"; */
+.right-align {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-header {
-    grid-area: head;
-}
-
-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
+.navbar,
+footer {
+    background-color: var(--mint-cream);
 }
 
 footer {
-    grid-area: footer;
+    margin-top: 10px;
+    height: 40px;
 }
+
+.btn-custom,
+.btn-custom:hover {
+    background-color: var(--btn);
+    border: 1px solid var(--mint-cream);
+}
+
