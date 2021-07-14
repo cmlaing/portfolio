@@ -10,35 +10,23 @@
 /* Color Variables */
 :root {
     /* green scheme */
-    --wintergreen-dream: #6b9080ff;
-    --cambridge-blue: #a4c3b2ff;
-    --light-cyan: #cce3deff;
-    --mint-cream: #eaf4f4ff;
-    --mint-cream-2: #f6fff8ff;
+    --dark-green: #577568;
+    --light-text: #F6F3F6;
+    --dark-text: #18251e;
+    --dark-alt: #513d51;
+    --light-bg: #cce3deff;
+    --light-head: #f6fff8;
 
-    /*gunmetal scheme*/
-    --gunmetal: #022b3aff;
-    --metallic-seaweed: #1f7a8cff;
-    --beau-blue: #bfdbf7ff;
-    --lavender-web: #e1e5f2ff;
-    --white: #ffffffff;
-
-    /* pink scheme */
-    --pale-pink: #f7d1cdff;
-    --queen-pink: #e8c2caff;
-    --thistle: #d1b3c4ff;
-    --glossy-grape: #b392acff;
-    --old-lavender: #735d78ff;
 
     /* Current Scheme */
-    --btn: var(--wintergreen-dream);  
-    --background: var(--mint-cream-2);
+    --btn: var(--dark-green);  
+ 
 
 
 }
 
 body {
-    background-color: var(--light-cyan);
+    background-color: var(--light-bg);
     
 }
 
@@ -48,9 +36,30 @@ body {
     margin-top: 10px;
 }
 
-.navbar,
+/* override Bootstrap */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--dark-green);
+    
+}
+
+.nav-link {
+    color: var(--dark-text);
+}
+
+.nav-link:hover {
+    color: var(--dark-alt);
+}
+
+h1,
+p {
+    color: var(--dark-text);
+}
+
+/* end override Bootstrap */
+
+nav,
 footer {
-    background-color: var(--mint-cream);
+    background-color: var(--light-head);
 }
 
 footer {
@@ -61,6 +70,6 @@ footer {
 .btn-custom,
 .btn-custom:hover {
     background-color: var(--btn);
-    border: 1px solid var(--mint-cream);
+    border: 1px solid var(--dark-alt);
 }
 
