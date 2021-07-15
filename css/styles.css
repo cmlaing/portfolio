@@ -27,6 +27,7 @@
 
 body {
     background-color: var(--light-bg);
+    font-family: 'Open Sans', sans-serif;
     
 }
 
@@ -55,6 +56,10 @@ p {
     color: var(--dark-text);
 }
 
+.hero-text {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
 /* end override Bootstrap */
 
 nav,
@@ -71,5 +76,9 @@ footer {
 .btn-custom:hover {
     background-color: var(--btn);
     border: 1px solid var(--dark-alt);
+}
+
+.projects {
+    background-color: var(--light-head);
 }
 
