@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;  
+    /* border: 1px red solid; */
 
 }
 
@@ -37,8 +38,23 @@ body {
     margin-top: 10px;
 }
 
-/* override Bootstrap */
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.left-align {
+    text-align: left;
+}
+
+.name {
+    color: var(--dark-alt);
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.nav-pills .nav-link.active,
+ .nav-pills .show>.nav-link,
+  {
     background-color: var(--dark-green);
     
 }
@@ -56,16 +72,18 @@ p {
     color: var(--dark-text);
 }
 
+
+
 .hero-text {
     font-family: 'Cinzel Decorative', cursive;
 }
 
-/* end override Bootstrap */
 
-nav,
+.nav,
 footer {
     background-color: var(--light-head);
 }
+
 
 footer {
     margin-top: 10px;
@@ -82,3 +100,34 @@ footer {
     background-color: var(--light-head);
 }
 
+
+/* 
+========================================================================== 
+Media Queries for Mobile and Tablet Views
+========================================================================== 
+*/
+
+/* --------------------------- 768 and smaller screens */
+
+@media screen and (max-width: 1023px){
+
+/* nav bar */
+
+    .nav-pills,
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+    .fixed-top
+    {
+    position: relative;
+    top: auto;
+    }
+
+/* col layout */
+
+#aboutme .row {
+    display: none;
+}
+
+}
