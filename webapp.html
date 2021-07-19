@@ -35,12 +35,12 @@
     <!-- Nav Bar-->
   
     <nav class="nav nav-pills justify-content-end fixed-top">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#aboutme">About Me</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#blog">Blog</a>
-      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="index.html#projects">Projects</a>
+      <a class="nav-link" href="index.html#aboutme">About Me</a>
+      <a class="nav-link" href="index.html#skills">Skills</a>
+      <a class="nav-link" href="index.html#blog">Blog</a>
+      <a class="nav-link" href="index.html#contact">Contact</a>
               <a class="nav-link" href="#">
               <button type="button" class="btn-custom btn-primary btn-sm px-4 me-md-2">Resume</button></a>
   
@@ -48,43 +48,56 @@
     </nav>
   
   </header>
-<div class="container">
+<div class="container pt-5">
 
     <div class="card mt-5">
         <h5 class="card-header">WebApp</h5>
-        <div class="card-body">
-          <h5 class="card-title">A Social Networking Example</h5>
-          <p class="card-text">
-            This project showcases HTML, CSS, and JavaScript. 
-            It resembles a social networking website. 
-            There are sections with user information, traffic charts, user updates, and some 
-            interactive elements.
-            <br>
-            The project is structured using CSS Grid for the overall layout and Flexbox for 
-            each individual widget. JavaScript is used to display the charts and add 
-            interactivity for the first chart with the data being changed depending on what 
-            mode the user selects. A message section will result with an alert box for the user 
-            to confirm if the message contained the required fields (select user, write a 
-            message). If the conditions are met, a successful alert box will appear - 
-            otherwise an error will appear in the alert box with the appropriate instructions. 
+        <div class="card-body project-desc">
+          <h5 class="card-title pt-3">A Social Networking Example</h5>
+          <p class="card-text pt-3">
+            <p>
+              The purpose of the project was to create a web application that demonstrated 
+              the use of chart widgets and localStorage using JavaScript. CSS Grid and Flexbox 
+              were used primarily for the layout.
+            </p>
+            <p>JavaScript: chart widgets, an alert notifcation box, green icon notification, 
+              localStorage, message sent confirmation.
+            </p>
+            
+            <p>
+            The top-right corner of the page has a bell icon with a green dot. The green dot 
+            indicates there are new notifications for the user. When the bell is clicked, a 
+            drop down menu appears of the notifications and the green dot disappears. <br>
+            Further down the page is a purple alert banner. When the "x" is clicked, the banner 
+            disappears. <br>
+            When the user attempts to send a message, all fields (selected user, message) must 
+            be filled out or else an error message (with instructions) will appear. If 
+            successful, a confirmation message appears on screen for the user. <br>
+ 
             The settings section uses localStorage to save the settings even after the page 
             is refreshed. The cancel button negates any changes and resets to base values. 
             The settings that are able to be saved include two toggle switches (on/off) and 
-            a drop down menu to select a timezone. At the top of the page there is a bell 
-            icon to represent notifications. When there are notifications, a green dot will 
-            appear on the bell icon. After clicked, the green dot goes away and a drop down 
-            menu of notification items appears. Clicking outside the notification drop down 
-            menu will close the menu.
-            <br>
+            a drop down menu to select a timezone.
+
+            </p>
+            <p>
             Overall, this project demonstrates a modular approach of having multiple 
             sections come together in a coherent design. JavaScript plugins keep the 
             chart information up to date without having to manually update the webpage 
             itself.
-            
             </p>
-            <a href="https://cmlaing.github.io/online_registration_v4/" target="_blank">
+            
+            <p>
+              Please follow the GitHub link below for the full project, or scroll down 
+              the page to view screenshots.
+            </p>
+
+            </p>
+            <div class="center pb-2">
+            <a href="https://cmlaing.github.io/web_app_dashboard_v3.2/" target="_blank">
               <img src="img/github.svg" class="github" alt="github"> <br>
               View on GitHub</a>
+            </div>
 
           
           <ul class="skills">
@@ -98,28 +111,51 @@
         </ul>
 
 
-        </div>
       </div>
+   </div>
 
-    <div>
+
+
+<div class="card mt-5">
+  <div class="card-header">
+    Examples of WebApp Project
+  </div>
+  <div class="card-body">
+    <p class="card-text p-3 center">
+    Various screenshots of the finished project in desktop and mobile views. 
+    </p>
  <!--Slideshow-->
-    <div id="project1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="webapp" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
         <div class="carousel-inner">
           
           <div class="carousel-item active">
             <img src="img/webapp/mockup_webapp.jpg" class="d-block w-100" alt="...">
+            
           </div>
 
           <div class="carousel-item">
             <img src="img/webapp/webapp.png" class="d-block w-100" alt="...">
           </div>
+
+          <div class="carousel-item">
+            <img src="img/webapp/webapp2.png" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/webapp/webapp3.png" class="d-block w-100" alt="...">
+          </div>
+        
+
+          <div class="carousel-item">
+            <img src="img/webapp/mobmockup2.jpg" class="d-block w-100" alt="...">
+          </div>
         
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#project1" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#webapp" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#project1" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#webapp" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -128,12 +164,27 @@
 
 
 
+  <div class="center pb-2 pt-4 mt-3">
+    <a href="https://cmlaing.github.io/web_app_dashboard_v3.2/" target="_blank">
+      <img src="img/github.svg" class="github" alt="github"> <br>
+      View on GitHub</a>
     </div>
+
+    <p class="card-text pt-3">
+      <a href="index.html">Back to Projects </a> 
+      </p>
+
+</div>
+</div>
+
+
 
 
 </div>
 
+
   <footer>
+  
     <p class="right-align">&copy; Crystal &Lscr;aing, 2021</p>
   </footer>
   

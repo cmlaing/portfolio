@@ -41,6 +41,19 @@ body {
 .left-align {
     text-align: left;
 }
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: var(--dark-alt);
+}
+
+a:hover {
+    background-color: var(--light-head);
+    color: var(--dark-alt);
+}
 
 .name {
     color: var(--dark-alt);
@@ -100,6 +113,8 @@ footer {
     background-color: var(--light-head);
 }
 
+
+
 ul.skills {
     padding: 0;
     text-align: center;
@@ -130,6 +145,22 @@ ul.skills {
     height: 30px;
     background-size: 30px 30px;
 }
+
+.project-desc {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#webapp {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.carousel-item img{
+    max-height: 550px;
+}
+
+
 
 
 /* 
