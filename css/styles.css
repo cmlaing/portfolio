@@ -1,3 +1,6 @@
+
+
+
 /* Universal Attributes */
 
 * {
@@ -92,6 +95,9 @@ p {
 }
 
 
+
+
+
 .nav,
 footer {
     background-color: var(--light-head);
@@ -109,9 +115,28 @@ footer {
     border: 1px solid var(--dark-alt);
 }
 
+.maximg {
+    max-width: 300px;
+}
+
 .projects {
     background-color: var(--light-head);
 }
+
+.carousel-item.active {
+    overflow: hidden;
+    max-height: 250px;
+}
+
+#webapplg .carousel-item.active {
+    overflow: hidden;
+    max-height: 500px;
+}
+.maincard {
+    height: 450px;
+}
+
+
 
 
 
@@ -156,9 +181,7 @@ ul.skills {
     margin: 0 auto;
 }
 
-.carousel-item img{
-    max-height: 550px;
-}
+
 
 
 
