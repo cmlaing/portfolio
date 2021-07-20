@@ -11,7 +11,7 @@
 
 }
 
-/* Color Variables */
+/* Variables */
 :root {
     /* green scheme */
     --dark-green: #577568;
@@ -24,6 +24,10 @@
 
     /* Current Scheme */
     --btn: var(--dark-green);  
+
+    --fancy-font: 'Cinzel Decorative', cursive;
+    --basic-font: 'Open Sans', sans-serif;
+
  
 
 
@@ -31,8 +35,25 @@
 
 body {
     background-color: var(--light-bg);
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--basic-font);
     
+}
+
+/* utilities */
+
+h1,
+p {
+    color: var(--dark-text);
+}
+
+.btn-custom,
+.btn-custom:hover {
+    background-color: var(--btn);
+    border: 1px solid var(--dark-alt);
+}
+
+.maximg {
+    max-width: 300px;
 }
 
 .right-align {
@@ -58,15 +79,15 @@ a:hover {
     color: var(--dark-alt);
 }
 
-.name {
-    color: var(--dark-alt);
-}
+
 
 .container {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2%;
 }
+
+/* navigation */
 
 .nav-pills .nav-link.active,
  .nav-pills .show>.nav-link,
@@ -83,20 +104,15 @@ a:hover {
     color: var(--dark-alt);
 }
 
-h1,
-p {
-    color: var(--dark-text);
-}
-
-
+/* hero */
 
 .hero-text {
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: var(--fancy-font);
 }
 
 
 
-
+/* nav/footer and just footer */
 
 .nav,
 footer {
@@ -109,15 +125,7 @@ footer {
     height: 40px;
 }
 
-.btn-custom,
-.btn-custom:hover {
-    background-color: var(--btn);
-    border: 1px solid var(--dark-alt);
-}
-
-.maximg {
-    max-width: 300px;
-}
+/* projects */
 
 .projects {
     background-color: var(--light-head);
@@ -137,7 +145,7 @@ footer {
 }
 
 
-
+/* list of skills */
 
 
 ul.skills {
@@ -161,6 +169,9 @@ ul.skills {
     background: var(--dark-green);
   }
 
+
+/* SVG */
+
   a.github {
     background-image: url(img/github.svg);
   }
@@ -170,6 +181,9 @@ ul.skills {
     height: 30px;
     background-size: 30px 30px;
 }
+
+
+/* subpages */
 
 .project-desc {
     padding-left: 10%;
